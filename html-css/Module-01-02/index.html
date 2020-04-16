@@ -1,13 +1,40 @@
+<!-- Элемент объявление типа документа HTML5 -->
 <!DOCTYPE html>
+
+<!-- Корневой элемент документа, как контейнер который заключает в себе всё содержимое веб-страницы, включая теги head и body -->
 <html lang="en">
+  <!-- Предназначен для хранения технической информации о странице -->
   <head>
+    <!-- Документу задается кодировка UTF-8 -->
     <meta charset="UTF-8" />
+
+    <!-- Метатег, который определяет автора документа. -->
+    <meta name="author" content="Mykola Vutov" />
+
+    <!-- Метатег, который определяет ключевые слова документа -->
+    <meta name="keywords" content="HTML, тег, метатег" />
+
+    <!-- Метатег, который определяет описание документа для поисковых систем -->
+    <meta name="description" content="HomeWork_Module-01-02" />
+
+    <!-- Метатег, который оптимизирует сайт для мобильных устройств -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Метатег, который определяет и отображает название веб-страницы -->
     <title>HomeWork_Module-01-02</title>
+
+    <!-- Внешний CSS -->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <!-- JavaScript -->
+    <!-- <script src="/javascript/code-guide.js"></script> -->
+
+    <!-- Скрипт для полноценного использования тегов HTML5 во всех браузерах -->
     <!--[if lt IE 9]>
       <script>
-        var e = "article,aside,figcaption,figure,footer,header,hgroup,nav,section,time".split(
-          ","
+        var e = 'article,aside,figcaption,figure,footer,header,hgroup,nav,section,time'.split(
+          ',',
         );
         for (var i = 0; i < e.length; i++) {
           document.createElement(e[i]);
@@ -16,35 +43,60 @@
     <![endif]-->
   </head>
 
+  <!-- Предназначен для хранения содержания веб-страницы, отображаемого в окне браузера -->
   <body>
+    <!-- Dводная часть смыслового раздела или всего сайта, обычно содержит подсказки и навигацию. Часто используется как шапка
+    всей страницы или сложной секции. Может быть несколько на странице. -->
+    <!-- Порядок атрибутов
+    Для удобства чтения HTML-атрибуты должны быть указаны именно в этом порядке:
+    class
+    id, name
+    data-*
+    src, for, type, href
+    title, alt
+    aria-*, role -->
     <header class="main-header">
+      <!-- Навигационный раздел со ссылками на другие страницы или другие части страниц -->
       <nav class="main-nav">
+        <!-- Списки предоставляют возможность упорядочить и систематизировать коллекции. В ul,ol может находится только li, а li - что угодно -->
         <ul class="main-menu">
           <li class="main-menu-item">
-            <a href="#maim-lifestyle" class="main-menu-link">Lifestyle</a>
+            <a href="#maim-lifestyle" class="main-menu-link">lifestyle</a>
           </li>
           <li class="main-menu-item">
-            <a href="#maim-photodiary" class="main-menu-link">Photodiary</a>
+            <a href="#maim-photodiary" class="main-menu-link">photodiary</a>
           </li>
           <li class="main-menu-item">
-            <a href="#maim-music" class="main-menu-link">Music</a>
+            <a href="#maim-music" class="main-menu-link">music</a>
           </li>
           <li class="main-menu-item">
-            <a href="#maim-travel" class="main-menu-link">Travel</a>
+            <a href="#maim-travel" class="main-menu-link">travel</a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <!-- Основное, не повторяющееся на других страницах, содержание. Может быть только один на странице. -->
     <main class="main-content">
+      <!-- Смысловой раздел документа. Неотделяемый от основного документа, в отличие от article. Желателен заголовок -->
       <section class="main-LifeStyle_1row_left" id="">
-        <img src="img/LifeStyle_1row_left_post.jpg" alt="Must be a picture" />
+        <img
+          src="img/LifeStyle_1row_left_post.jpg"
+          alt="Must be a picture"
+          width="420"
+          height="280"
+        />
         <br />
         <br />
         <div class="LifeStyle_1row_left">
           <p>Lifestyle</p>
+
+          <!-- Заголовки смысловых разделов -->
           <h2 class="title">
             More than just a music festival
           </h2>
+
+          <!-- Параграф — универсальный контейнер для группировки мелких фразовых элементов -->
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
             natus quod dolores sint, dolore quam atque aliquam impedit
@@ -68,7 +120,12 @@
       </section>
 
       <section class="main-LifeStyle_1row_right_post" id="">
-        <img src="img/LifeStyle_1row_right_post.jpg" alt="Must be picture" />
+        <img
+          src="img/LifeStyle_1row_right_post.jpg"
+          alt="Must be a picture"
+          width="420"
+          height="280"
+        />
         <br />
         <br />
         <div class="LifeStyle_1row_right_post">
@@ -99,7 +156,12 @@
       </section>
 
       <section class="main-PhotoDiary_2row_left_post" id="">
-        <img src="img/PhotoDiary_2row_left_post.jpg" alt="Must be picture" />
+        <img
+          src="img/PhotoDiary_2row_left_post.jpg"
+          alt="Must be a picture"
+          width="420"
+          height="280"
+        />
         <br />
         <br />
         <div class="PhotoDiary_2row_left_post">
@@ -130,7 +192,12 @@
       </section>
 
       <section class="main-PhotoDiary_2row_right_post" id="">
-        <img src="img/PhotoDiary_2row_right_post.jpg" alt="Must be picture" />
+        <img
+          src="img/PhotoDiary_2row_right_post.jpg"
+          alt="Must be a picture"
+          width="420"
+          height="280"
+        />
         <br />
         <br />
         <div class="PhotoDiary_2row_right_post">
@@ -160,7 +227,11 @@
         </div>
       </section>
     </main>
+
+    <!-- Финальная часть раздела или всего сайта, часто содержит копирайт, список ссылок на социальные сети, контактную
+    информацию и так далее. Может быть несколько на странице. -->
     <footer>
+      <!-- Кнопка-при клике происходит что-то без перезагрузки или перенаправления страницы -->
       <button type="submit" class="button">Load more</button>
     </footer>
   </body>
