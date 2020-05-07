@@ -1,0 +1,225 @@
+<!-- Элемент объявление типа документа HTML5 -->
+<!DOCTYPE html>
+
+<!-- Корневой элемент документа, как контейнер который заключает в себе всё содержимое веб-страницы, включая теги head и body -->
+<html lang="en">
+  <!-- Предназначен для хранения технической информации о странице -->
+  <head>
+    <!-- Документу задается кодировка UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Метатег, который определяет автора документа. -->
+    <meta name="author" content="Mykola Vutov" />
+
+    <!-- Метатег, который определяет ключевые слова документа -->
+    <meta name="keywords" content="HTML, тег, метатег" />
+
+    <!-- Метатег, который определяет описание документа для поисковых систем -->
+    <meta name="description" content="HomeWork_Module-03" />
+
+    <!-- Метатег, который оптимизирует сайт для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Метатег, который определяет и отображает название веб-страницы -->
+    <title>HomeWork_Module-03</title>
+
+    <!-- Подключение Normalize-->
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <!-- Подключение GoogleFonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300i,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Внешний CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript -->
+    <!-- <script src="/javascript/code-guide.js"></script> -->
+
+    <!-- Скрипт для полноценного использования тегов HTML5 во всех браузерах -->
+    <!--[if lt IE 9]>
+      <script>
+        var e = 'article,aside,figcaption,figure,footer,header,hgroup,nav,section,time'.split(
+          ',',
+        );
+        for (var i = 0; i < e.length; i++) {
+          document.createElement(e[i]);
+        }
+      </script>
+    <![endif]-->
+  </head>
+
+  <!-- Предназначен для хранения содержания веб-страницы, отображаемого в окне браузера -->
+  <body>
+    <!-- Dводная часть смыслового раздела или всего сайта, обычно содержит подсказки и навигацию. Часто используется как шапка
+    всей страницы или сложной секции. Может быть несколько на странице. -->
+    <!-- Порядок атрибутов
+    Для удобства чтения HTML-атрибуты должны быть указаны именно в этом порядке:
+    class
+    id, name
+    data-*
+    src, for, type, href
+    title, alt
+    aria-*, role -->
+    <header class="main-header container">
+      <!-- Навигационный раздел со ссылками на другие страницы или другие части страниц -->
+      <nav class="main-nav">
+        <!-- Списки предоставляют возможность упорядочить и систематизировать коллекции. В ul,ol может находится только li, а li - что угодно -->
+        <ul class="main-menu">
+          <li class="main-menu-item-lifestyle">
+            <a href="#main-lifestyle" class="main-menu-link">Lifestyle</a>
+          </li>
+          <li class="main-menu-item-photodiary">
+            <a href="#main-photodiary" class="main-menu-link">Photodiary</a>
+          </li>
+          <li class="main-menu-item-music">
+            <a href="#main-music" class="main-menu-link">Music</a>
+          </li>
+          <li class="main-menu-item-travel">
+            <a href="#main-travel" class="main-menu-link">Travel</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Основное, не повторяющееся на других страницах, содержание. Может быть только один на странице. -->
+    <main class="main-content container">
+      <!--1____Cмысловой раздел документа. Неотделяемый от основного документа, в отличие от article. Желателен заголовок -->
+      <section class="main-section-content">
+        <div class="main-subsection-content" id="main-lifestyle">
+          <img src="img/LifeStyle_1row_left_post.jpg" alt="Must be a picture" />
+          <div class="section-content">
+            <p class="section-content-title">Lifestyle</p>
+            <!-- Заголовки смысловых разделов -->
+            <h2 class="title-section">
+              More than just a music festival
+            </h2>
+
+            <!-- Параграф — универсальный контейнер для группировки мелких фразовых элементов -->
+            <p class="content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+          </div>
+        </div>
+
+        <div class="main-subsection-content" id="main-photodiary">
+          <img
+            src="img/LifeStyle_1row_right_post.jpg"
+            alt="Must be a picture"
+          />
+          <div class="section-content">
+            <p class="section-content-title">Lifestyle</p>
+            <!-- Заголовки смысловых разделов -->
+            <h2 class="title-section">
+              Life tastes better with coffee
+            </h2>
+            <!-- Параграф — универсальный контейнер для группировки мелких фразовых элементов -->
+            <p class="content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--2___Смысловой раздел документа. Неотделяемый от основного документа, в отличие от article. Желателен заголовок -->
+      <section class="main-section-content">
+        <div class="main-subsection-content" id="main-music">
+          <img
+            src="img/PhotoDiary_2row_left_post.jpg"
+            alt="Must be a picture"
+          />
+          <div class="section-content">
+            <p class="section-content-title">Photodiary</p>
+            <!-- Заголовки смысловых разделов -->
+            <h2 class="title-section">
+              American dream
+            </h2>
+
+            <!-- Параграф — универсальный контейнер для группировки мелких фразовых элементов -->
+            <p class="content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+          </div>
+        </div>
+        <div class="main-subsection-content" id="main-travel">
+          <img
+            src="img/PhotoDiary_2row_right_post.jpg"
+            alt="Must be a picture"
+          />
+          <div class="section-content">
+            <p class="section-content-title">Photodiary</p>
+            <!-- Заголовки смысловых разделов -->
+            <h2 class="title-section">
+              A day exploring the Alps
+            </h2>
+
+            <!-- Параграф — универсальный контейнер для группировки мелких фразовых элементов -->
+            <p class="content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--3___Смысловой раздел документа. Неотделяемый от основного документа, в отличие от article. Желателен заголовок -->
+      <section class="main-section-content">
+        <div class="main-subsection-content" id="main-song">
+          <img src="img/LifeStyle_3row_left_post.jpg" alt="Must be a picture" />
+          <div class="section-content">
+            <p class="section-content-title">Lifestyle</p>
+            <!-- Заголовки смысловых разделов -->
+            <h2 class="title-section">
+              Top 10 song for running
+            </h2>
+
+            <!-- Параграф — универсальный контейнер для группировки мелких фразовых элементов -->
+            <p class="content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+          </div>
+        </div>
+        <div class="main-subsection-content" id="main-winter">
+          <img
+            src="img/LifeStyle_3row_right_post.jpg"
+            alt="Must be a picture"
+          />
+          <div class="section-content">
+            <p class="section-content-title">Lifestyle</p>
+            <!-- Заголовки смысловых разделов -->
+            <h2 class="title-section">
+              Cold winter days
+            </h2>
+
+            <!-- Параграф — универсальный контейнер для группировки мелких фразовых элементов -->
+            <p class="content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Финальная часть раздела или всего сайта, часто содержит копирайт, список ссылок на социальные сети, контактную
+    информацию и так далее. Может быть несколько на странице. -->
+    <footer class="main-footer container">
+      <div class="footer-button">
+        <!-- Кнопка-при клике происходит что-то без перезагрузки или перенаправления страницы -->
+        <button type="submit" class="load-button">Load more</button>
+      </div>
+    </footer>
+  </body>
+</html>
