@@ -1,25 +1,38 @@
-html {
-  box-sizing: border-box;
+* {
+  /*  Обрамление всех елементов */
+  /* outline: 1px solid red; */
+  /*  Сброс UserAgetnsStyles */
+  margin: 0;
+  padding: 0;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
+html {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Ubuntu', sans-serif;
   font-family: 'Playfair Display', serif;
   color: #626262;
-  font-size: 0px;
-  line-height: 0px;
-  margin: 0px;
 }
 
 .container {
+  /*  Центрирование контейнера */
+  display: block;
   width: 900px;
   margin: 0 auto;
+  /* background-color: rosybrown; */
+  /* margin: 0 auto;
+  vertical-align: top; */
+  /* Решения проблемм */
+  /* 1_Hack при использовании margin-top: */
+  /* border: 1px solid transparent; */
+  /* font-size: 0 удаляем пробелы для 
+  inline-block */
+  font-size: 0px;
 }
 
 .img {
@@ -74,27 +87,18 @@ body {
 }
 
 /* main */
-
-.main-section-content {
-  display: inline-block;
-  width: 900px;
-  text-align: center;
-  vertical-align: top;
-  margin-bottom: 130px;
-}
-
 .main-subsection-content {
   display: inline-block;
   width: 420px;
   text-align: left;
   vertical-align: top;
-}
-
-.main-section-content div:not(:last-child) {
   margin-right: 60px;
+  margin-bottom: 130px;
 }
-
-.main-section-content:nth-last-child(-n + 1) {
+.main-subsection-content:nth-of-type(2n) {
+  margin-right: 0px;
+}
+.main-subsection-content:nth-of-type(n + 5) {
   margin-bottom: 0px;
 }
 
@@ -128,7 +132,7 @@ body {
   font-family: 'Playfair Display', serif;
   color: #626262;
   text-transform: none;
-  margin: 0;
+  margin: 0px;
 }
 
 /* footer */
