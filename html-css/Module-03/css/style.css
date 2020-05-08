@@ -1,18 +1,17 @@
-* {
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
   /*  Обрамление всех елементов */
   /* outline: 1px solid red; */
   /*  Сброс UserAgetnsStyles */
   margin: 0;
   padding: 0;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-html {
-  box-sizing: border-box;
-}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   font-family: 'Playfair Display', serif;
