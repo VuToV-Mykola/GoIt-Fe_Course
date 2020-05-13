@@ -71,6 +71,10 @@ a {
   color: #1abc9c;
 }
 
+.site-logo::first-letter {
+  font-weight: 900;
+}
+
 /* navigation-items */
 
 .navigation-items {
