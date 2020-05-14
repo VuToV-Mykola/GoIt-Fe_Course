@@ -1,0 +1,260 @@
+<!-- Элемент объявление типа документа HTML5 -->
+<!DOCTYPE html>
+
+<!-- Корневой элемент документа, как контейнер который заключает в себе всё содержимое веб-страницы, включая теги head и body -->
+<html lang="zxx">
+  <!-- Предназначен для хранения технической информации о странице -->
+  <head>
+    <!-- Документу задается кодировка UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Метатег, который определяет автора документа. -->
+    <meta name="author" content="Mykola Vutov" />
+
+    <!-- Метатег, который определяет ключевые слова документа -->
+    <meta name="keywords" content="HTML, тег, метатег" />
+
+    <!-- Метатег, который определяет описание документа для поисковых систем -->
+    <meta name="description" content="HomeWork_Module-06" />
+
+    <!-- Метатег, который оптимизирует сайт для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Метатег, который определяет и отображает название веб-страницы -->
+    <title>HomeWork_Module-06</title>
+
+    <!-- Подключение Normalize-->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Подключение Visually-hidden-->
+    <link rel="stylesheet" href="css/css-visually-hidden.css" />
+
+    <!-- Подключение GoogleFonts -->
+    <!--     <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- Внешний CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript -->
+    <!-- <script src="/javascript/code-guide.js"></script> -->
+
+    <!-- Скрипт для полноценного использования тегов HTML5 во всех браузерах -->
+    <!--[if lt IE 9]>
+      <script>
+        var e = 'article,aside,figcaption,figure,footer,header,hgroup,nav,section,time'.split(
+          ',',
+        );
+        for (var i = 0; i < e.length; i++) {
+          document.createElement(e[i]);
+        }
+      </script>
+    <![endif]-->
+  </head>
+
+  <!-- Предназначен для хранения содержания веб-страницы, отображаемого в окне браузера -->
+  <body>
+    <!-- Dводная часть смыслового раздела или всего сайта, обычно содержит подсказки и навигацию. Часто используется как шапка
+    всей страницы или сложной секции. Может быть несколько на странице. -->
+    <!-- Порядок атрибутов
+    Для удобства чтения HTML-атрибуты должны быть указаны именно в этом порядке:
+    class
+    id, name
+    data-*
+    src, for, type, href
+    title, alt
+    aria-*, role -->
+    <h1 class="visually-hidden">Home Work 6</h1>
+    <header class="main-header container">
+      <!-- Навигационный раздел со ссылками на другие страницы или другие части страниц -->
+      <nav class="main-navigation">
+        <!-- Списки предоставляют возможность упорядочить и систематизировать коллекции. В ul,ol может находится только li, а li - что угодно -->
+        <a href="#" class="site-logo">
+          <img
+            class="img-logo"
+            src="./img/logo.png"
+            alt="brand and company name"
+          />
+        </a>
+        <ul class="navigation-items">
+          <li class="navigation-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="navigation-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+          <li class="navigation-item"><a class="nav-link" href="#">Work</a></li>
+          <li class="navigation-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="navigation-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Основное, не повторяющееся на других страницах, содержание. Может быть только один на странице. -->
+    <main class="main-content container">
+      <!--Cмысловой раздел документа. Неотделяемый от основного документа, в отличие от article. Желателен заголовок -->
+      <section class="services-section">
+        <span class="title-slogan">We work with</span>
+        <h2 class="section-title">Amazing Services</h2>
+        <ul class="servises">
+          <li class="servise-item icon-alarm">
+            <h3 class="title-item">Photography</h3>
+            <p class="text-item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+          <li class="servise-item icon-graph">
+            <h3 class="title-item">Web Design</h3>
+            <p class="text-item">
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor.
+            </p>
+          </li>
+          <li class="servise-item icon-computer">
+            <h3 class="title-item">Creativity</h3>
+            <p class="text-item">
+              Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor.
+            </p>
+          </li>
+          <li class="servise-item icon-book">
+            <h3 class="title-item">seo</h3>
+            <p class="text-item">
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+            </p>
+          </li>
+          <li class="servise-item icon-home">
+            <h3 class="title-item">Css/Html</h3>
+            <p class="text-item">
+              Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+            </p>
+          </li>
+          <li class="servise-item icon-image">
+            <h3 class="title-item">digital</h3>
+            <p class="text-item">
+              Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="team-section container">
+        <span class="title-slogan">We work with</span>
+        <h2 class="section-title">Meet our team</h2>
+        <p class="text-item text-item-team">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <ul class="team-items">
+          <li class="team-item team-item-background">
+            <div class="cart-item cart-item-graphic">
+              <ul class="icon-socials">
+                <li class="team-link">
+                  <a class="icon-link icon-facebook" href="#">
+                    <span class="visually-hidden">Facebook</span>
+                  </a>
+                </li>
+                <li class="team-link">
+                  <a class="icon-link icon-twitter" href="#">
+                    <span class="visually-hidden">Twitter</span>
+                  </a>
+                </li>
+                <li class="team-link">
+                  <a class="icon-link icon-pinterest" href="#">
+                    <span class="visually-hidden">Pinterest</span>
+                  </a>
+                </li>
+                <li class="team-link">
+                  <a class="icon-link icon-instagram" href="#">
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <h5 class="team-item-name">Matthew Dix</h5>
+            <p class="team-item-occupation">Graphic Design</p>
+          </li>
+          <li class="team-item team-item-branding">
+            <div class="cart-item cart-item-branding">
+              <ul class="icon-socials">
+                <li class="team-link">
+                  <a class="icon-link icon-facebook" href="#">
+                    <span class="visually-hidden">Facebook</span>
+                  </a>
+                </li>
+                <li class="team-link">
+                  <a class="icon-link icon-twitter" href="#">
+                    <span class="visually-hidden">Twitter</span>
+                  </a>
+                </li>
+                <li class="team-link">
+                  <a class="icon-link icon-pinterest" href="#">
+                    <span class="visually-hidden">Pinterest</span>
+                  </a>
+                </li>
+                <li class="team-link">
+                  <a class="icon-link icon-instagram" href="#">
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="team-item-name">Christopher Campbell</p>
+            <p class="team-item-occupation">Branding/UX design</p>
+          </li>
+          <li class="team-item">
+            <div class="cart-item cart-item-developer">
+              <ul class="icon-socials">
+                <li class="team-link">
+                  <a class="icon-link icon-facebook" href="#">
+                    <span class="visually-hidden">Facebook</span>
+                  </a>
+                </li>
+                <li class="team-link">
+                  <a class="icon-link icon-twitter" href="#">
+                    <span class="visually-hidden">Twitter</span>
+                  </a>
+                </li>
+                <li class="team-link">
+                  <a class="icon-link icon-pinterest" href="#">
+                    <span class="visually-hidden">Pinterest</span>
+                  </a>
+                </li>
+                <li class="team-link">
+                  <a class="icon-link icon-instagram" href="#">
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="team-item-name">Michael Fertig</p>
+            <p class="team-item-occupation">Developer</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Финальная часть раздела или всего сайта, часто содержит копирайт, список ссылок на социальные сети, контактную
+    информацию и так далее. Может быть несколько на странице. -->
+    <footer class="main-footer container">
+      <div class="footer-content">
+        <p class="footer-text">© 2016 MoGo free PSD template by</p>
+        <a class="footer-link" href="#">Laaqiq</a>
+      </div>
+      <div class="footer-field">
+        <label>
+          <input type="text" class="input-field" placeholder="Your Email..." />
+        </label>
+        <button type="button" class="button">Subscribe</button>
+      </div>
+    </footer>
+  </body>
+</html>
