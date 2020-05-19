@@ -1,0 +1,181 @@
+<!-- Элемент объявление типа документа HTML5 -->
+<!DOCTYPE html>
+
+<!-- Корневой элемент документа, как контейнер который заключает в себе всё содержимое веб-страницы, включая теги head и body -->
+<html lang="zxx">
+  <!-- Предназначен для хранения технической информации о странице -->
+
+  <head>
+    <!-- Документу задается кодировка UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Метатег, который определяет автора документа. -->
+    <meta name="author" content="Mykola Vutov" />
+
+    <!-- Метатег, который определяет ключевые слова документа -->
+    <meta name="keywords" content="HTML, тег, метатег" />
+
+    <!-- Метатег, который определяет описание документа для поисковых систем -->
+    <meta name="description" content="HomeWork_Module-06" />
+
+    <!-- Метатег, который оптимизирует сайт для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Метатег, который определяет и отображает название веб-страницы -->
+    <title>HomeWork_Module-08</title>
+
+    <!-- Подключение Normalize-->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Подключение Visually-hidden-->
+    <link rel="stylesheet" href="css/css-visually-hidden.css" />
+
+    <!-- Подключение Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300i,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Внешний CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Внешний Media-CSS -->
+    <link rel="stylesheet" href="css/media.css" />
+
+    <!-- JavaScript -->
+    <!-- <script src="/javascript/code-guide.js"></script> -->
+
+    <!-- Скрипт для полноценного использования тегов HTML5 во всех браузерах -->
+    <!--[if lt IE 9]>
+      <script>
+        var e = 'article,aside,figcaption,figure,footer,header,hgroup,nav,section,time'.split(
+          ',',
+        );
+        for (var i = 0; i < e.length; i++) {
+          document.createElement(e[i]);
+        }
+      </script>
+    <![endif]-->
+  </head>
+
+  <!-- Предназначен для хранения содержания веб-страницы, отображаемого в окне браузера -->
+
+  <body>
+    <!-- Dводная часть смыслового раздела или всего сайта, обычно содержит подсказки и навигацию. Часто используется как шапка
+    всей страницы или сложной секции. Может быть несколько на странице. -->
+    <!-- Порядок атрибутов
+    Для удобства чтения HTML-атрибуты должны быть указаны именно в этом порядке:
+    class
+    id, name
+    data-*
+    src, for, type, href
+    title, alt
+    aria-*, role -->
+    <h1 class="visually-hidden">Home Work 8</h1>
+    <header class="main-header">
+      <div class="main-header-wrapper container">
+        <!-- Навигационный раздел со ссылками на другие страницы или другие части страниц -->
+        <nav>
+          <div class="main-navigation-wrapper">
+            <a href="#" class="site-logo">
+              <img src="./img/logo-img.png" alt="brand and company name" />
+            </a>
+            <ul class="navigation-items">
+              <li class="navigation-item">
+                <a href="#" class="item-link">Log in</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="item-link">Sign up</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-header-content">
+            <h2 class="header-content-title">Share your holiday dreams</h2>
+            <p class="header-content-description">
+              And find the perfect partner to fullfill it
+            </p>
+            <button class="header-button" type="button">
+              Find your holiday partner
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Основное, не повторяющееся на других страницах, содержание. Может быть только один на странице. -->
+    <main class="main-content">
+      <div class="container">
+        <h1 class="main-content-title visually-hidden">Title</h1>
+        <section>
+          <div>
+            <h2 class="section-title">Meet a partner for your best holiday</h2>
+            <ul class="section-items">
+              <li class="section-item section-item-tv">
+                <div class="item-img-wrapper item-partner-tv">
+                  <img
+                    class="item-icon-tv"
+                    src="./img/icon-tv.png"
+                    alt="icon-tv"
+                  />
+                </div>
+                <span class="section-item-title">Bradley Hunter</span>
+                <p class="section-item-description">
+                  Based in Chicago. I love playing tennis and loud music.
+                </p>
+              </li>
+              <li class="section-item section-item-chemistry">
+                <div class="item-img-wrapper item-partner-chemistry">
+                  <img
+                    class="item-icon-chemistry"
+                    src="./img/icon-chemistry.png"
+                    alt="icon-chemistry"
+                  />
+                </div>
+                <span class="section-item-title">Lucas Marsha</span>
+                <p class="section-item-description">
+                  I get my inspiration from nature and objects around me. I have
+                  a passion to colours, typography and skateboards.
+                </p>
+              </li>
+              <li class="section-item section-item-cap">
+                <div class="item-img-wrapper item-partner-cap">
+                  <img
+                    class="item-icon-"
+                    src="./img/icon-cap.png"
+                    alt="icon-cap"
+                  />
+                </div>
+                <span class="section-item-title">Heather Walker</span>
+                <p class="section-item-description">
+                  I'm a happy person that loves cats and climbing on mountains.
+                </p>
+              </li>
+              <li class="section-item section-item-telegram">
+                <div class="item-img-wrapper item-partner-telegram">
+                  <img
+                    class="item-icon-telegram"
+                    src="./img/icon-telegram.png"
+                    alt="icon-telegram"
+                  />
+                </div>
+                <span class="section-item-title">Bradley Hunter</span>
+                <p class="section-item-description">
+                  Based in Chicago. I love playing tennis and loud music.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Финальная часть раздела или всего сайта, часто содержит копирайт, список ссылок на социальные сети, контактную
+информацию и так далее. Может быть несколько на странице. -->
+    <footer class="main-footer">
+      <div class="main-footer-wrapper container">
+        <button class="footer-button">See other partners</button>
+      </div>
+    </footer>
+  </body>
+</html>
