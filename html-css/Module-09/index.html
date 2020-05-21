@@ -16,7 +16,7 @@
     <meta name="keywords" content="HTML, тег, метатег" />
 
     <!-- Метатег, который определяет описание документа для поисковых систем -->
-    <meta name="description" content="HomeWork_Module-06" />
+    <meta name="description" content="HomeWork_Module-09" />
 
     <!-- Метатег, который оптимизирует сайт для мобильных устройств -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +24,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Метатег, который определяет и отображает название веб-страницы -->
-    <title>HomeWork_Module-08</title>
+    <title>HomeWork_Module-09</title>
 
     <!-- Подключение Normalize-->
     <link rel="stylesheet" href="css/normalize.css" />
@@ -37,7 +37,10 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300i,400&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Внешний Bootstrap-grid.CSS -->
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <!-- Внешний Bootstrap-min.CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Внешний CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -50,10 +53,10 @@
     <!-- Скрипт для полноценного использования тегов HTML5 во всех браузерах -->
     <!--[if lt IE 9]>
       <script>
-        var e = 'article,aside,figcaption,figure,footer,header,hgroup,nav,section,time'.split(
+        let e = 'article,aside,figcaption,figure,footer,header,hgroup,nav,section,time'.split(
           ',',
         );
-        for (var i = 0; i < e.length; i++) {
+        for (let i = 0; i < e.length; i++) {
           document.createElement(e[i]);
         }
       </script>
@@ -73,109 +76,219 @@
     src, for, type, href
     title, alt
     aria-*, role -->
-    <h1 class="visually-hidden">Home Work 8</h1>
-    <header class="main-header">
-      <div class="main-header-wrapper container">
-        <!-- Навигационный раздел со ссылками на другие страницы или другие части страниц -->
-        <nav>
-          <div class="main-navigation-wrapper">
-            <a href="#" class="site-logo">
-              <img src="./img/logo-img.png" alt="brand and company name" />
-            </a>
-            <ul class="navigation-items">
-              <li class="navigation-item">
-                <a href="#" class="item-link">Log in</a>
-              </li>
-              <li class="navigation-item">
-                <a href="#" class="item-link">Sign up</a>
-              </li>
-            </ul>
-          </div>
-          <div class="main-header-content">
-            <h2 class="header-content-title">Share your holiday dreams</h2>
-            <p class="header-content-description">
-              And find the perfect partner to fullfill it
-            </p>
-            <button class="header-button" type="button">
-              Find your holiday partner
-            </button>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- Основное, не повторяющееся на других страницах, содержание. Может быть только один на странице. -->
-    <main class="main-content">
+
+    <!-- Header -->
+    <h1 class="visually-hidden">Home Work 9</h1>
+    <div class="container-fluid">
       <div class="container">
-        <h1 class="main-content-title visually-hidden">Title</h1>
-        <section>
-          <div>
-            <h2 class="section-title">Meet a partner for your best holiday</h2>
-            <ul class="section-items">
-              <li class="section-item section-item-tv">
-                <div class="item-img-wrapper item-partner-tv">
-                  <img
-                    class="item-icon-tv"
-                    src="./img/icon-tv.png"
-                    alt="icon-tv"
-                  />
+        <div class="row">
+          <div class="col-12 px-0">
+            <header class="main-header">
+              <div class="row text-center justify-content-md-between">
+                <div class="col-12 px-0 col-md-4">
+                  <nav class="navigation-items m-md-0 text-lg-right">
+                    <a
+                      class="item-link text-white cart-title typographic-title py-2 px-3"
+                      href="#"
+                      >Log in</a
+                    >
+                    <a
+                      class="item-link text-white cart-title typographic-title py-2 px-3"
+                      href="#"
+                      >Sign up</a
+                    >
+                  </nav>
                 </div>
-                <span class="section-item-title">Bradley Hunter</span>
-                <p class="section-item-description">
-                  Based in Chicago. I love playing tennis and loud music.
-                </p>
-              </li>
-              <li class="section-item section-item-chemistry">
-                <div class="item-img-wrapper item-partner-chemistry">
-                  <img
-                    class="item-icon-chemistry"
-                    src="./img/icon-chemistry.png"
-                    alt="icon-chemistry"
-                  />
+                <div
+                  class="col-12 px-0 mb-4 col-md-4 order-md-first pl-md-4 pt-md-5 m-md-0 pl-lg-0"
+                >
+                  <a class="site-logo" href="#">
+                    <img
+                      class="img-logo m-auto m-lg-0"
+                      src="img/logo-img.png"
+                      alt="brand and company name"
+                    />
+                  </a>
                 </div>
-                <span class="section-item-title">Lucas Marsha</span>
-                <p class="section-item-description">
-                  I get my inspiration from nature and objects around me. I have
-                  a passion to colours, typography and skateboards.
-                </p>
-              </li>
-              <li class="section-item section-item-cap">
-                <div class="item-img-wrapper item-partner-cap">
-                  <img
-                    class="item-icon-"
-                    src="./img/icon-cap.png"
-                    alt="icon-cap"
-                  />
+                <div class="col-12 px-0 text-center">
+                  <div class="main-header-content text-white">
+                    <h2
+                      class="typographic-title text-uppercase mb-2 typographic-md-title"
+                    >
+                      Share your holiday dreams
+                    </h2>
+                    <p
+                      class="typographic-description mb-3 px-5 mb-md-3 typographic-md-description"
+                    >
+                      And find the perfect partner to fullfill it
+                    </p>
+                    <button
+                      class="header-button typographic-title cart-title btn--dark py-3 px-5"
+                      type="button"
+                    >
+                      Find your holiday partner
+                    </button>
+                  </div>
                 </div>
-                <span class="section-item-title">Heather Walker</span>
-                <p class="section-item-description">
-                  I'm a happy person that loves cats and climbing on mountains.
-                </p>
-              </li>
-              <li class="section-item section-item-telegram">
-                <div class="item-img-wrapper item-partner-telegram">
-                  <img
-                    class="item-icon-telegram"
-                    src="./img/icon-telegram.png"
-                    alt="icon-telegram"
-                  />
-                </div>
-                <span class="section-item-title">Bradley Hunter</span>
-                <p class="section-item-description">
-                  Based in Chicago. I love playing tennis and loud music.
-                </p>
-              </li>
-            </ul>
+              </div>
+            </header>
           </div>
-        </section>
+        </div>
       </div>
-    </main>
+    </div>
+    <!-- Main-Основное, не повторяющееся на других страницах, содержание. Может быть только один на странице. -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 px-0">
+          <main class="row main-content mb-4 text-center">
+            <div class="col-12">
+              <h1 class="main-content-title visually-hidden">Title</h1>
+            </div>
+            <div class="col-12 px-0">
+              <section class="main-section">
+                <div class="row">
+                  <h2
+                    class="col-12 typographic-title section-title text-dark px-4 mb-3 p-md-0"
+                  >
+                    Meet a partner for your best holiday
+                  </h2>
+                  <div class="col-12 px-0">
+                    <div class="row carts px-lg-0">
+                      <div
+                        class="cart col-12 px-0 col-md-6 order-md-1 px-md-2 col-lg-3 mb-lg-0"
+                      >
+                        <a class="cart-link" href="#">
+                          <div class="cart-images mb-3">
+                            <div class="cart-img-wrp">
+                              <img
+                                src="img/partner-tv.png"
+                                alt="Bradley
+                                                                Hunter"
+                                class="cart-img"
+                              />
+                            </div>
+                            <i class="icon icon-tv"></i>
+                          </div>
+                          <h4
+                            class="typographic-title cart-title text-dark mb-3 cart-fullname"
+                          >
+                            Bradley Hunter
+                          </h4>
+                          <p
+                            class="typographic-description cart-title text-ligth m-0"
+                          >
+                            Based in Chicago. I love playing tennis and loud
+                            music.
+                          </p>
+                        </a>
+                      </div>
+                      <div
+                        class="cart col-12 px-0 col-md-6 order-md-3 px-md-2 col-lg-3 mb-lg-0"
+                      >
+                        <a class="cart-link" href="#">
+                          <div class="cart-images mb-3">
+                            <div class="cart-img-wrp">
+                              <img
+                                src="img/partner-chemistry.png"
+                                alt="Lucas Marsha"
+                                class="cart-img"
+                              />
+                            </div>
+                            <i class="icon icon-chemistry"></i>
+                          </div>
+                          <h4
+                            class="typographic-title cart-title text-dark mb-3 cart-fullname"
+                          >
+                            Lucas Marsha
+                          </h4>
+                          <p
+                            class="typographic-description cart-title text-ligth m-0"
+                          >
+                            I get my inspiration from nature and objects around
+                            me. I have a passion to colours, typography and
+                            skateboards.
+                          </p>
+                        </a>
+                      </div>
+                      <div
+                        class="cart col-12 px-0 col-md-6 order-md-2 px-md-2 col-lg-3 mb-lg-0"
+                      >
+                        <a class="cart-link" href="#">
+                          <div class="cart-images mb-3">
+                            <div class="cart-img-wrp">
+                              <img
+                                src="img/partner-cap.png"
+                                alt="Heather
+                                                                Walker"
+                                class="cart-img"
+                              />
+                            </div>
+                            <i class="icon icon-cap"></i>
+                          </div>
+                          <h4
+                            class="typographic-title cart-title text-dark mb-3 cart-fullname"
+                          >
+                            Heather Walker
+                          </h4>
+                          <p
+                            class="typographic-description cart-title text-ligth m-0"
+                          >
+                            I'm a happy person that loves cats and climbing on
+                            mountains.
+                          </p>
+                        </a>
+                      </div>
+                      <div
+                        class="cart col-12 px-0 col-md-6 order-md-4 px-md-2 col-lg-3"
+                      >
+                        <a class="cart-link" href="#">
+                          <div class="cart-images mb-3">
+                            <div class="cart-img-wrp">
+                              <img
+                                src="img/partner-telegram.png"
+                                alt=""
+                                class="cart-img"
+                              />
+                            </div>
+                            <i class="icon icon-telegram"></i>
+                          </div>
+                          <h4
+                            class="typographic-title cart-title text-dark mb-3 cart-fullname"
+                          >
+                            Bradley Hunter
+                          </h4>
+                          <p
+                            class="typographic-description cart-title text-ligth m-0"
+                          >
+                            Based in Chicago. I love playing tennis and loud
+                            music.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
 
     <!-- Финальная часть раздела или всего сайта, часто содержит копирайт, список ссылок на социальные сети, контактную
 информацию и так далее. Может быть несколько на странице. -->
-    <footer class="main-footer">
-      <div class="main-footer-wrapper container">
-        <button class="footer-button">See other partners</button>
-      </div>
-    </footer>
+    <div class="container">
+      <footer class="row main-footer text-center">
+        <div class="col-12 px-0">
+          <div class="main-footer-wrapper">
+            <button
+              class="footer-button typographic-title btn--light py-2 px-md-4"
+            >
+              See other partners
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

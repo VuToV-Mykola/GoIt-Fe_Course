@@ -1,0 +1,219 @@
+<!-- Элемент объявление типа документа HTML5 -->
+<!DOCTYPE html>
+
+<!-- Корневой элемент документа, как контейнер который заключает в себе всё содержимое веб-страницы, включая теги head и body -->
+<html lang="zxx">
+  <!-- Предназначен для хранения технической информации о странице -->
+
+  <head>
+    <!-- Документу задается кодировка UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Метатег, который определяет автора документа. -->
+    <meta name="author" content="Mykola Vutov" />
+
+    <!-- Метатег, который определяет ключевые слова документа -->
+    <meta name="keywords" content="HTML, тег, метатег" />
+
+    <!-- Метатег, который определяет описание документа для поисковых систем -->
+    <meta name="description" content="HomeWork_Module-07" />
+
+    <!-- Метатег, который оптимизирует сайт для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Метатег, который определяет и отображает название веб-страницы -->
+    <title>HomeWork_Module-07</title>
+
+    <!-- Подключение Normalize-->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Подключение Visually-hidden-->
+    <link rel="stylesheet" href="css/css-visually-hidden.css" />
+
+    <!-- Подключение Fonts -->
+    <link href="./Fonts/DroidSerif-Italic.ttf" rel="stylesheet" />
+
+    <!-- Внешний CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript -->
+    <!-- <script src="/javascript/code-guide.js"></script> -->
+
+    <!-- Скрипт для полноценного использования тегов HTML5 во всех браузерах -->
+    <!--[if lt IE 9]>
+    <script>
+      let e = 'article,aside,figcaption,figure,footer,header,hgroup,nav,section,time'.split(
+              ',',
+      );
+      for (let i = 0; i < e.length; i++) {
+        document.createElement(e[i]);
+      }
+    </script>
+    <![endif]-->
+  </head>
+
+  <!-- Предназначен для хранения содержания веб-страницы, отображаемого в окне браузера -->
+
+  <body>
+    <!-- Dводная часть смыслового раздела или всего сайта, обычно содержит подсказки и навигацию. Часто используется как шапка
+    всей страницы или сложной секции. Может быть несколько на странице. -->
+    <!-- Порядок атрибутов
+    Для удобства чтения HTML-атрибуты должны быть указаны именно в этом порядке:
+    class
+    id, name
+    data-*
+    src, for, type, href
+    title, alt
+    aria-*, role -->
+    <h1 class="visually-hidden">Home Work 7</h1>
+    <header class="main-header container">
+      <div class="main-header-wrapper container">
+        <!-- Навигационный раздел со ссылками на другие страницы или другие части страниц -->
+        <nav class="main-navigation">
+          <!-- Списки предоставляют возможность упорядочить и систематизировать коллекции. В ul,ol может находится только li, а li - что угодно -->
+          <div class="logo-text-wrapper">
+            Golden
+            <a class="site-logo" href="#">
+              <img
+                class="img-logo visually-hidden"
+                src="./img/Logo_treehouse.png"
+                alt="brand and company name"
+              />
+            </a>
+          </div>
+          <ul class="navigation-items">
+            <li class="navigation-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="nav-link">Portfolio</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Основное, не повторяющееся на других страницах, содержание. Может быть только один на странице. -->
+    <main class="main-content container">
+      <!--Cмысловой раздел документа. Неотделяемый от основного документа, в отличие от article. Желателен заголовок -->
+      <div class="main-content-wrapper container">
+        <section class="main-section">
+          <div>
+            <h2 class="section-title">Services</h2>
+            <p class="description-section">
+              Proin iaculis purus consequat sem cure.
+            </p>
+            <ul class="section-items">
+              <li class="section-item icon-basket">
+                <h3 class="title-item">E-Commerce</h3>
+                <p class="description">
+                  Proin iaculis purus consequat sem cure digni ssim. Donec
+                  porttitora entum suscipit aenean rhoncus posuere odio in
+                  tincidunt.
+                </p>
+              </li>
+              <li class="section-item icon-laptop">
+                <h3 class="title-item">Responsive Web</h3>
+                <p class="description">
+                  Proin iaculis purus consequat sem cure digni ssim. Donec
+                  porttitora entum suscipit aenean rhoncus posuere odio in
+                  tincidunt.
+                </p>
+              </li>
+              <li class="section-item icon-locked">
+                <h3 class="title-item">Web Security</h3>
+                <p class="description">
+                  Proin iaculis purus consequat sem cure digni ssim. Donec
+                  porttitora entum suscipit aenean rhoncus posuere odio in
+                  tincidunt.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Финальная часть раздела или всего сайта, часто содержит копирайт, список ссылок на социальные сети, контактную
+информацию и так далее. Может быть несколько на странице. -->
+    <footer class="main-footer">
+      <div class="main-footer-wrapper container">
+        <form class="profile-form" action="#" method="GET">
+          <div class="profile-form-wrapper">
+            <h2 class="footer-title">Contact us</h2>
+            <p class="description-footer">
+              Proin iaculis purus consequat sem cure.
+            </p>
+
+            <div class="fieldset-form">
+              <ul class="input-items">
+                <li class="input-item">
+                  <label>
+                    <input
+                      class="input-field"
+                      type="text"
+                      name="name"
+                      placeholder="Your Name *"
+                      minlength="4"
+                      maxlength="40"
+                      autocomplete="name"
+                      autofocus
+                      required
+                    />
+                  </label>
+                </li>
+                <li class="input-item">
+                  <label>
+                    <input
+                      class="input-field"
+                      type="email"
+                      name="email"
+                      placeholder="Your E-mail *"
+                      required
+                      autocomplete="email"
+                    />
+                  </label>
+                </li>
+                <li class="input-item">
+                  <label>
+                    <input
+                      class="input-field"
+                      type="text"
+                      name="subject"
+                      placeholder="Subject"
+                      autocomplete="off"
+                    />
+                  </label>
+                </li>
+              </ul>
+              <label>
+                <textarea
+                  class="input-area"
+                  rows="10"
+                  cols="30"
+                  name="message"
+                  placeholder="Your message *"
+                  required
+                  autocomplete="off"
+                ></textarea>
+              </label>
+            </div>
+            <button type="submit" class="button" value="submit">
+              Send message
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
