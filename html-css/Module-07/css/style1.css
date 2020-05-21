@@ -205,7 +205,6 @@ img {
   margin: 0 auto 24px;
 }
 
-<<<<<<< HEAD
 .icon-basket::before {
   background-image: url(../img/Icon-Basket.png);
 }
@@ -216,18 +215,6 @@ img {
 
 .icon-locked::before {
   background-image: url(../img/Icon-Locked.png);
-=======
-.icon-basket {
-  background-image: url(../img/Circle_basket.png);
-}
-
-.icon-laptop {
-  background-image: url(../img/Circle_laptop.png);
-}
-
-.icon-locked {
-  background-image: url(../img/Circle_locked.png);
->>>>>>> 924551652e682d2d3656477baf13d2cae7750a74
 }
 
 .title-item {
