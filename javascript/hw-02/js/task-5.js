@@ -3,7 +3,7 @@
 
 /* Строгий режим */
 'use strict';
-
+/* Solution 1
 const checkForSpam = function (message) {
   // код
   return (
@@ -11,7 +11,21 @@ const checkForSpam = function (message) {
     message.toLowerCase().includes(`sale`)
   );
 };
+*/
 
+// Solution 2
+const checkForSpam = function (message) {
+  // код
+  let isSpam=0;
+  const forbiddenWorts = ['sale','spam'];
+  for (const forbiddenWort of forbiddenWorts) {
+    isSpam= message.toLowerCase().includes(forbiddenWort)
+    if (isSpam==true) {
+      break; 
+    }
+  }
+  return isSpam
+};
 /*s
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
