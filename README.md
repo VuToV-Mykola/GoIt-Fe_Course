@@ -65,4 +65,11 @@
   <h4> Ссылка на рабочую страницу:</h3>
  <p>  https://vutov-mykola.github.io/GoIt-Fe_Course/javascript/hw-01/index.html</p>
 </section>
+<section>
+<h3><b>JS-Домашняя работа #2(Финальная работа модуля):</b></h2>
+ <h4>  Ссылка на исходные файлы:</h3>
+ <p>  https://github.com/VuToV-Mykola/GoIt-Fe_Course/tree/master/javascript/hw-02</p>
+  <h4> Ссылка на рабочую страницу:</h3>
+ <p>  https://vutov-mykola.github.io/GoIt-Fe_Course/javascript/hw-02/index.html</p>
+</section>
 
