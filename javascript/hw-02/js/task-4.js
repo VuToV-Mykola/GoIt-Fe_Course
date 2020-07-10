@@ -6,9 +6,11 @@
 
 /* Строгий режим */
 'use strict';
+/*solution 1
 
 const formatString = function (string) {
   // твой код
+  
   let formatedString = string;
   const arr = string.split('');
   if (arr.length > 40) {
@@ -16,8 +18,18 @@ const formatString = function (string) {
     formatedString = arr.join('');
   }
 
-  return formatedString;
-};
+  return formatedString; */
+
+  // solution 2
+const formatString = function (string) {
+  // твой код
+  if (string.length > 40) {
+    string = string.slice(0, 39) + "...";  
+  };
+  return string;
+  };
+
+ 
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
