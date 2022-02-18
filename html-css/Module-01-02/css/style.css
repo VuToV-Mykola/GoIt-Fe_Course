@@ -1,0 +1,56 @@
+/* Универсальный, обнулит margin у всех элементов */
+* {
+  margin: 0;
+}
+
+/* Селектор тега */
+p {
+  color: rgb(0, 0, 255);
+}
+
+/* Селектор класса */
+.reflink {
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
+  color: #f00;
+}
+.container {
+  background-image: url(../img/sea-shore-6986097__340.webp);/* The image used */
+  background-position: center; /* Center the image */
+  background-color: #cccccc;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;/* Resize the background image to cover the entire container */
+}
+
+/* Селектор идентификатора */
+#main-text {
+  font-size: 24px;
+}
+
+/* Селектор потомка */
+ol li {
+  font-size: 20px;
+  color: rgb(7, 172, 43);
+}
+
+/* Дочерний селектор */
+ul > li {
+  color: #000;
+}
+
+/* Сестринский селектор */
+h1 + p {
+  color: green;
+  font-size: 20px;
+}
+
+/* Селектор атрибута */
+a[href='stuff'] {
+  color: #ca3c25;
+}
+
+/* Селектор псевдокласса */
+a:hover {
+  background-color: #067bc2;
+}
